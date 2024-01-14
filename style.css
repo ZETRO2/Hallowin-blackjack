@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+@font-face {
+  font-family: "drip";
+  src: url('./plasdrip.ttf');
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#blackjack-hit-button {
+  background-color: #ff7201;
+  color: white;
+  border-color: #ff7201;
+  width: 50px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px, rgba(0, 0, 0, 0.7) 0px 12px 13px, rgba(0, 0, 0, 0.4) 0px -3px 5px;
+  outline: 3px dashed black;
+  font-weight: 900;
+}
+
+#blackjack-hit-button:hover {
+  width: 52px;
+  height: 42px;
+}
+
+#blackjack-stand-button {
+  margin-left: 15px;
+  background-color: black;
+  color: white;
+  border-color: black;
+  width: 66px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px, rgba(0, 0, 0, 0.7) 0px 12px 13px, rgba(0, 0, 0, 0.4) 0px -3px 5px;
+  outline: 3px dashed #ff7201;
+  font-weight: 900;
+}
+
+#blackjack-stand-button:hover {
+  width: 68px;
+  height: 42px;
+}
+
+#blackjack-deal-button {
+  margin-left: 15px;
+  background-color: #ff7201;
+  color: white;
+  border-color: #ff7201;
+  width: 61px;
+  height: 40px;
+  outline: 3px dashed black;
+  box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px, rgba(0, 0, 0, 0.7) 0px 12px 13px, rgba(0, 0, 0, 0.4) 0px -3px 5px;
+  font-weight: 900;
+}
+
+#blackjack-deal-button:hover {
+  width: 63px;
+  height: 42px;
+}
+
+#blackjack-restart-button {
+  margin-left: 15px;
+  color: white;
+  background-color: black;
+  border-color: black;
+  width: 70px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px, rgba(0, 0, 0, 0.7) 0px 12px 13px, rgba(0, 0, 0, 0.4) 0px -3px 5px;
+  outline: 3px dashed #ff7201;
+  font-weight: 900;
+}
+
+#blackjack-restart-button:hover {
+  width: 72px;
+  height: 42px;
+}
+
+body {
+  background-color: #110f28;
+  background-image: url('./halloween1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Creepster';
+  color: white;
+}
+
+.message {
+  color: red;
+  margin-top: 50px;
+  position: relative;
+  text-transform: uppercase;
+  height: 200px;
+  letter-spacing: 10px;
+  text-align: center;
+  text-shadow: 0px 11px 10px black;
+  font-family: 'Drip';
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-blackjack-row-2 div {
+  padding: 10px;
+  flex: 1;
+  height: 350px;
+  text-align: center;
+}
+
+.flex-blackjack-row-2 div img {
+  padding: 10px;
+  object-fit: contain;
+}
+
+.flex-blackjack-row-2 {
+  color: red;
+  text-shadow: 1px 1px 5px black;
+}
+
+.flex-blackjack-row-3 div {
+  padding: 10px;
+}
+
+.flex-blackjack-row-3 div button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 8px;
+  border: 2px solid rgba(255, 0, 0, 1);
+  color: white;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 3px 10px red;
+}
+
+th,
+td {
+  background-color: black;
+}
+
+#win-header {
+  color: lightgreen;
+  font-family: 'Drip';
+}
+
+#loss-header {
+  color: #d32f2f;
+  font-family: 'Drip';
+}
+
+#draw-header {
+  color: yellow;
+  font-family: 'Drip';
+}
+
+#wins {
+  font-family: 'Drip';
+}
+
+#losses {
+  font-family: 'Drip';
+}
+
+#draws {
+  font-family: 'Drip';
+}
+
+h1 {
+  font-size: 80px;
+}
+
+#blackjack-result {
+  margin: 0;
+  text-shadow: 0px 11px 10px black;
+  font-size: 37px;
+}
